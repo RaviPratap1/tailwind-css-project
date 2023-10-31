@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/main.css" />
+    <title>Design Studio</title>
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .roundShape1 {
+        animation: mymove1 2s;
+      }
+      .roundShape2 {
+        animation: mymove2 2s;
+      }
+      .roundShape3 {
+        animation: mymove3 2s;
+      }
+      @keyframes mymove1 {
+        from {
+          right: 0px;
+        }
+        to {
+          right: 24%;
+        }
+      }
+      @keyframes mymove2 {
+        from {
+          left: 0px;
+        }
+        to {
+          left: 35%;
+        }
+      }
+      @keyframes mymove3 {
+        from {
+          top: 0px;
+        }
+        to {
+          top: 8rem;
+        }
+      }
+    </style>
+  </head>
+  <body class="relative">
+    <header class="sticky top-0 bg-slate-400 min-w-[1024px] z-50">
+      <nav class="min-w-[1024px] flex justify-around items-center  h-20">
+        <div class="logo text-5xl">logo</div>
+        <ul class="flex gap-5 font-bold text-xl">
+          <li><a href="#How-it-works">works</a></li>
+          <li><a href="#Services">Services</a></li>
+          <li><a href="#Footer">Footer</a></li>
+        </ul>
+
+        <ul class="Ull Line flex flex-col gap-1">
+          <div class="first w-7 h-[3px] bg-black"></div>
+          <div class="second w-7 h-[3px] bg-black"></div>
+          <div class="third w-7 h-[3px] bg-black"></div>
+        </ul>
+      </nav>
+
+      <div
+        class="navContent bg-black text-white w-40 h-72 absolute right-0"
+        style="display: none"
+      >
+        <ul class="flex flex-col gap-10 items-center mt-14">
+          <li class="threeLine">HOME</li>
+          <li>HOME</li>
+          <li>HOME</li>
+        </ul>
+      </div>
+    </header>
+
+    <div class=" w-12 h-20 bg-gradient-to-t from-indigo-400 via-purple-400 to-pink-400 ...  text-white text-center rounded-2xl fixed bottom-4 right-4  z-40">
+      <ul>
+        <li>Fb</li>
+        <li>W</li>
+        <li>In</li>
+      </ul>
+    </div>
+
+    <main class="min-w-[1024px]">
+      <div
+        class="hero flex h-[70vh] items-center justify-center gap-10 bg-gradient-to-r from-indigo-500 ..."
+      >
+        <div class="w-[500px] flex justify-end">
+          <img
+            class=""
+            src="https://images01.nicepage.com/c461c07a441a5d220e8feb1a/c7a112d4b0bf5e6cb5202f02/Untitled-2-min.png"
+            alt=""
+            width="500px"
+          />
+        </div>
+
+        <div class="w-[500px] flex flex-col justify-start items-start gap-4">
+          <div class="w-32 h-1 bg-[#F01965]"></div>
+          <h1 class="text-7xl text-[#F01965] font-bold">Design Studio</h1>
+          <p class="text-justify w-[520px] font-mullish text-blue-900">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident
+          </p>
+          <button
+            class="bg-[#727CF0] w-44 h-14 rounded-md text-white text-xl tracking-[.1em] hover:bg-[#F01965]"
+          >
+            contact us
+          </button>
+        </div>
+      </div>
+
+      <!-- +++++++++How it works++++++++++++ -->
+
+      <div
+        id="How-it-works"
+        class="m-auto h-[800px] bg-gradient-to-r from-indigo-100 via-purple-300 to-pink-100 ..."
+      >
+        <div class="flex flex-col justify-center items-center gap-4 mb-4">
+          <h1 class="text-[#F01965] text-4xl font-bold">How it works</h1>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore
+          </p>
+        </div>
+
+        <div class="flex gap-3 justify-center items-center">
+          <div
+            class="border-[#F01965] border-[1px] rounded-md w-[200px] bg-white"
+          >
+            <div class="m-7 flex flex-col gap-3">
+              <span
+                class="text-[#F01965] bg-[#ddb9c5] w-8 h-8 rounded-full flex items-center justify-center"
+                >1</span
+              >
+              <h2 class="text-[#F01965] text-1xl font-bold">
+                Share your designs
+              </h2>
+              <p class="text-sm text-gray-700 font-mullish leading-6">
+                Sample text. Click to select the text box. Click again or double
+                click to start editing the text.
+              </p>
+              <button
+                class="text-[#F01965] border-[#F01965] border-[1px] w-20 rounded-md hover:bg-[#f873a2] hover:text-white"
+              >
+                More
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="border-[#F01965] border-[1px] rounded-md w-[200px] bg-white"
+          >
+            <div class="m-7 flex flex-col gap-3">
+              <span
+                class="text-[#F01965] bg-[#ddb9c5] w-8 h-8 rounded-full flex items-center justify-center"
+                >2</span
+              >
+              <h2 class="text-[#F01965] text-1xl font-bold">Development</h2>
+              <p class="text-sm text-gray-700 font-mullish leading-6">
+                Sample text. Click to select the text box. Click again or double
+                click to start editing the text.
+              </p>
+              <button
+                class="text-[#F01965] border-[#F01965] border-[1px] w-20 rounded-md hover:bg-[#f873a2] hover:text-white"
+              >
+                More
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="border-[#F01965] border-[1px] rounded-md w-[200px] bg-white"
+          >
+            <div class="m-7 flex flex-col gap-3">
+              <span
+                class="text-[#F01965] bg-[#ddb9c5] w-8 h-8 rounded-full flex items-center justify-center"
+                >3</span
+              >
+              <h2 class="text-[#F01965] text-1xl font-bold">
+                Provide feedback
+              </h2>
+              <p class="text-sm text-gray-700 font-mullish leading-6">
+                Sample text. Click to select the text box. Click again or double
+                click to start editing the text.
+              </p>
+              <button
+                class="text-[#F01965] border-[#F01965] border-[1px] w-20 rounded-md hover:bg-[#f873a2] hover:text-white"
+              >
+                More
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="border-[#F01965] border-[1px] rounded-md w-[200px] bg-white"
+          >
+            <div class="m-7 flex flex-col gap-3">
+              <span
+                class="text-[#F01965] bg-[#ddb9c5] w-8 h-8 rounded-full flex items-center justify-center"
+                >4</span
+              >
+              <h2 class="text-[#F01965] text-1xl font-bold">Launch website</h2>
+              <p class="text-sm text-gray-700 font-mullish leading-6">
+                Sample text. Click to select the text box. Click again or double
+                click to start editing the text.
+              </p>
+              <button
+                class="text-[#F01965] border-[#F01965] border-[1px] w-20 rounded-md hover:bg-[#f873a2] hover:text-white"
+              >
+                More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <div class="flex justify-center mt-32">
+          <div
+            class="flex flex-col gap-5 justify-start w-[415px] bg-white p-10"
+          >
+            <h3 class="text-[#F01965] font-bold">
+              We have successfully managed projects since 2002
+            </h3>
+            <p>
+              Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Praesent sapien lorem, finibus sed maximus dictum, sodales
+              eget dui. Nullam aliquam diam ut est eleifend, et molestie erat
+              rutrum
+            </p>
+            <button class="w-32 h-12 text-white bg-[#727CF0]">
+              Learn more
+            </button>
+            <h3 class="text-[#F01965] font-bold">
+              We offer a complete design service
+            </h3>
+            <p>
+              Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Praesent sapien lorem, finibus sed maximus dictum, sodales
+              eget dui. Nullam aliquam diam ut est eleifend, et molestie erat
+              rutrum
+            </p>
+            <button class="w-32 h-12 text-white bg-[#727CF0]">
+              Learn more
+            </button>
+          </div>
+
+          <div class="w-[415px] bg-[#BEADE0] flex items-center">
+            <img
+              src="https://www.enterspeed.com/_next/image?url=%2Fimages%2Fpages%2Fphotos%2Fdemocratising-high-performing-apis.png&w=384&q=75"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <!-- +++++++++++++What we Do+++++++++++++++ -->
+      <div class="flex justify-center mt-96">
+        <div class="flex flex-col gap-5 justify-start w-[415px] bg-white p-10">
+          <h2 class="text-[#F01965] font-bold text-4xl">What we Do</h2>
+          <p>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum
+          </p>
+          <button class="w-32 h-12 text-white rounded-lg bg-[#727CF0]">
+            Learn more
+          </button>
+        </div>
+        <div class="w-[415px] bg-white flex items-center">
+          <img
+            src="https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/3ce947ad16785917b84ee93e/Untitled-21.png"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <!-- ++++.+++++++++++++++++++Our Features & Services++++++++++++++++++ -->
+      <div
+        id="Services"
+        class="bg-gradient-to-l from-indigo-100 via-purple-300 to-pink-100 ..."
+      >
+        <div class="w-[830px] m-auto">
+          <h1 class="text-[#F01965] font-bold text-4xl text-center pt-10">
+            Our Features & Services
+          </h1>
+
+          <div class="flex flex-wrap mt-10 pb-10">
+            <div class="p-2">
+              <div
+                class="rounded-md w-[260px] bg-white p-4 flex flex-col justify-center items-center gap-3 h-[420px]"
+              >
+                <img
+                  class="w-full h-[190px]"
+                  src="https://images01.nicepage.com/c461c07a441a5d220e8feb1a/b4adb3b8fc8a57308f9450af/w.jpg"
+                  alt=""
+                />
+                <h2 class="text-[#F01965] font-bold text-2xl">NO CODING</h2>
+                <p class="text-center">
+                  Nisl purus in mollis nunc sed id semper. Rhoncus aenean vel
+                  elit scelerisque mauris.
+                </p>
+                <button
+                  class="text-[#F01965] border-[#F01965] border-[2px] w-20 rounded-md h-10 mb-7 hover:bg-[#f873a2] hover:text-white"
+                >
+                  More
+                </button>
+              </div>
+            </div>
+
+            <div class="p-2">
+              <div
+                class="rounded-md w-[260px] bg-white p-4 flex flex-col justify-center items-center gap-3 h-[420px]"
+              >
+                <img
+                  class="w-full h-[190px]"
+                  src="https://images01.nicepage.com/c461c07a441a5d220e8feb1a/76bccfc336f7574fac373715/search-engine-optimization-online-promotion-smm-manager-cartoon-character-mobile-settings-tools-adjustment-business-platform-website-analysis-vect.jpg"
+                  alt=""
+                />
+                <h2 class="text-[#F01965] font-bold text-2xl text-center">
+                  SEO OPTIMOZATION
+                </h2>
+                <p class="text-center">
+                  Nisl purus in mollis nunc sed id semper. Rhoncus aenean vel
+                  elit scelerisque mauris.
+                </p>
+                <button
+                  class="text-[#F01965] border-[#F01965] border-[2px] w-20 rounded-md h-10 mb-7"
+                >
+                  More
+                </button>
+              </div>
+            </div>
+
+            <div class="p-2">
+              <div
+                class="rounded-md w-[260px] bg-white p-4 flex flex-col justify-center items-center gap-3 h-[420px]"
+              >
+                <img
+                  class="w-full h-[190px]"
+                  src="https://images01.nicepage.com/c461c07a441a5d220e8feb1a/a409dbefaa8453d58b6b8caa/cloud-robotics-abstract-concept-illustration_335657-3801.jpg"
+                  alt=""
+                />
+                <h2 class="text-[#F01965] font-bold text-2xl">
+                  CLOUD SOLUTIONS
+                </h2>
+                <p class="text-center">
+                  Nisl purus in mollis nunc sed id semper. Rhoncus aenean vel
+                  elit scelerisque mauris.
+                </p>
+                <button
+                  class="text-[#F01965] border-[#F01965] border-[2px] w-20 rounded-md h-10 mb-7"
+                >
+                  More
+                </button>
+              </div>
+            </div>
+
+            <div class="p-2">
+              <div
+                class="rounded-md w-[260px] bg-white p-4 flex flex-col justify-center items-center gap-3 h-[420px]"
+              >
+                <img
+                  class="w-[220px]"
+                  src="https://images01.nicepage.com/c461c07a441a5d220e8feb1a/df938ada401b597b9bd560dc/sign-page-abstract-concept-illustration_335657-3875.jpg"
+                  alt=""
+                />
+                <h2 class="text-[#F01965] font-bold text-2xl">
+                  HAPPY CUSTOMERS
+                </h2>
+                <p class="text-center">
+                  Nisl purus in mollis nunc sed id semper. Rhoncus aenean vel
+                  elit scelerisque mauris.
+                </p>
+                <button
+                  class="text-[#F01965] border-[#F01965] border-[2px] w-20 rounded-md h-10 mb-7"
+                >
+                  More
+                </button>
+              </div>
+            </div>
+
+            <div class="p-2">
+              <div
+                class="rounded-md w-[260px] bg-white p-4 flex flex-col justify-center items-center gap-3 h-[420px]"
+              >
+                <img
+                  class="w-[200px]"
+                  src="https://images01.nicepage.com/c461c07a441a5d220e8feb1a/4e3d9afe527d5b2fafa676ac/launching-business-project-innovative-solutions-creative-thinking-brave-ideas-businessman-self-motivation-professional-aspirations-vector-isolated.jpg"
+                  alt=""
+                />
+                <h2 class="text-[#F01965] font-bold text-2xl">
+                  GET SET UP FAST
+                </h2>
+                <p class="text-center">
+                  Nisl purus in mollis nunc sed id semper. Rhoncus aenean vel
+                  elit scelerisque mauris.
+                </p>
+                <button
+                  class="text-[#F01965] border-[#F01965] border-[2px] w-20 rounded-md h-10 mb-7"
+                >
+                  More
+                </button>
+              </div>
+            </div>
+
+            <div class="p-2">
+              <div
+                class="rounded-md w-[260px] bg-white p-4 flex flex-col justify-center items-center gap-3 h-[420px]"
+              >
+                <img
+                  class="w-full h-[200px]"
+                  src="https://images01.nicepage.com/c461c07a441a5d220e8feb1a/7d5396e966ab5bbfa8332d69/five-star-grading-evaluation-rating-estimating-excellent-review-customer-satisfaction-with-service-highest-score-client-feedback_335657-2684.jpg"
+                  alt=""
+                />
+                <h2 class="text-[#F01965] font-bold text-2xl">TOP RAITING</h2>
+                <p class="text-center">
+                  Nisl purus in mollis nunc sed id semper. Rhoncus aenean vel
+                  elit scelerisque mauris.
+                </p>
+                <button
+                  class="text-[#F01965] border-[#F01965] border-[2px] w-20 rounded-md h-10 mb-7"
+                >
+                  More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- +++++++++++++++++++++++++ -->
+      <div class="">
+        <div class="flex w-[830px] gap-8 m-auto mt-10">
+          <div class="w-[50%] flex flex-col gap-5">
+            <img
+              class="rounded-2xl"
+              src="https://images01.nicepage.com/c461c07a441a5d220e8feb1a/b5ad0a97191b59b0943c8319/dfdfdf.jpg"
+              alt=""
+            />
+            <h2 class="text-[#F01965] font-bold text-xl">
+              Brand, experiences and radical collaboration
+            </h2>
+            <p>
+              Sample text. Click to select the text box. Click again or double
+              click to start editing the text.
+            </p>
+          </div>
+
+          <div class="w-[50%] flex flex-col gap-10">
+            <div
+              class="flex flex-col justify-start bg-[#ebe9e9] p-10 gap-4 rounded-md"
+            >
+              <img
+                class="w-10"
+                src="https://images01.nicepage.com/c461c07a441a5d220e8feb1a/1354cee6bae6513dbdb9e6bf/2919740.png"
+                alt=""
+              />
+              <p>
+                Creating the world's first community driven superbrand. Massa
+                tincidunt nunc pulvinar sapien et. Ante in nibh mauris cursus
+                mattis. Pellentesque elit ullamcorper dignissim cras tincidunt
+                lobortis feugiat vivamus at.
+              </p>
+            </div>
+
+            <div class="flex flex-col gap-5">
+              <h3 class="text-[#727CF0] font-bold text-2xl">
+                Translating 100 years of service into a digital future
+              </h3>
+              <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </p>
+              <button class="w-32 h-10 text-white rounded-lg bg-[#727CF0]">
+                contact us
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- +++++++++++++++++++++++++++++ -->
+      <div class="h-[460px] mt-10">
+        <div
+          class="bg-gradient-to-l from-indigo-100 via-purple-300 to-pink-100 ... h-[300px] relative animation: spin 1s linear infinite;"
+        >
+          <div
+            class="roundShape1 z-10 absolute right-[24%] top-[60%] rounded-full w-[400px] h-[400px]"
+            style="
+              background-image: url(https://hpro-web-assets.s3.amazonaws.com/insights/uploads/2015/12/remote-working.jpg);
+              background-size: cover;
+              background-position: center;
+            "
+          ></div>
+
+          <div
+            class="roundShape2 z-20 absolute left-[35%] top-72 rounded-full w-[200px] h-[200px] bg-gray-200"
+            style="
+              background-image: url(https://cdn.osxdaily.com/wp-content/uploads/2015/03/macbook-pro-retina-on-stand-with-external-display-gorgeous-mac-setup-900x674.jpg);
+              background-size: 200px;
+              background-repeat: no-repeat;
+              background-position: center;
+            "
+          ></div>
+
+          <div
+            class="roundShape3 z-3 absolute left-[40%] top-32 rounded-full w-[300px] h-[300px] bg-gradient-to-t from-indigo-300 via-red-100 to-pink-400 ..."
+          ></div>
+        </div>
+      </div>
+
+      <!-- ++++++++++++++++++++++++++++++++++ -->
+      <div
+        class="bg-gradient-to-t from-indigo-300 via-red-200 to-white-300 ..."
+      >
+        <div class="flex gap-32 flex-col justify-center items-center">
+          <div class="flex w-[900px] gap-5 justify-center mt-32">
+            <div class="w-[290px] bg-[#727CF0] h-[150px] rounded-2xl p-7">
+              <h2 class="text-white text-2xl font-bold flex gap-1 mb-3">
+                CALL US
+              </h2>
+              <p class="text-white">1 (234) 567-891,</p>
+              <p class="text-white">1 (334) 097-802</p>
+            </div>
+
+            <div class="w-[290px] bg-[#727CF0] h-[150px] rounded-2xl p-7">
+              <h2 class="text-white text-2xl font-bold flex gap-1 mb-3">
+                LOCATION
+              </h2>
+              <p class="text-white">121 Rock Sreet, 21 Avenue, New</p>
+              <p class="text-white">York, NY 92103-9000</p>
+            </div>
+
+            <div class="w-[290px] bg-[#727CF0] h-[150px] rounded-2xl p-7">
+              <h2 class="text-white text-2xl font-bold flex gap-1 mb-3">
+                HOURS
+              </h2>
+              <p class="text-white">Mon – Fri …… 11 am – 8 pm, Sat</p>
+              <p class="text-white">Sun …… 6 am – 8 pm</p>
+            </div>
+          </div>
+
+          <div class="flex gap-10 mb-10">
+            <div
+              class="w-[400px] flex flex-col gap-14 items-center justify-center"
+            >
+              <h2 class="text-[#F01965] font-bold text-4xl leading-[1.4]">
+                We turn your design into a live Webflow project.
+              </h2>
+              <p class="leading-[1.7] text-xl">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </p>
+            </div>
+
+            <div class="w-[320px] bg-white">
+              <form
+                action=" "
+                class="flex flex-col justify-start items-center gap-4 p-5"
+              >
+                <h2 class="text-[#F01965] font-bold text-xl text-center">
+                  GET STARTED WITH A FREE QUOTATION
+                </h2>
+
+                <div class="flex flex-col gap-1">
+                  <label for="">Name</label>
+                  <input
+                    type="text"
+                    class="rounded-lg text-center h-8 bg-gray-300 w-60"
+                    placeholder="Enter Your Name"
+                  />
+                </div>
+
+                <div class="flex flex-col gap-1">
+                  <label for="">Gmail</label>
+                  <input
+                    type="text"
+                    class="rounded-lg text-center h-8 bg-gray-300 w-60"
+                    placeholder="Enter Your Name"
+                  />
+                </div>
+
+                <div class="flex flex-col gap-1">
+                  <label for="">Message</label>
+                  <input
+                    type="text"
+                    class="rounded-lg text-center bg-gray-300 w-60 h-52"
+                    placeholder="Enter Your Name"
+                  />
+                </div>
+
+                <div class="flex justify-start mr-14 gap-2">
+                  <input type="checkbox" name="" id="" />
+                  <label for="" class="text-xs">
+                    I accept the Terms of Service</label
+                  >
+                </div>
+                <button class="w-52 h-10 text-white rounded-lg bg-[#727CF0]">
+                  Submit your request
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="min-w-[1024px] " id="Footer">
+      <div class="bg-black h-12 text-white text-center pt-3 mt-10">Footer</div>
+    </footer>
+  </body>
+</html>
